@@ -5820,7 +5820,7 @@ angular.module('ramlConsoleApp').run(['$templateCache', function($templateCache)
     "\n" +
     "            <span ng-hide=\"methodInfo.is\" ng-if=\"resource.traits\" class=\"raml-console-flag raml-console-resource-heading-flag\"><b>Traits:</b> {{readResourceTraits(resource.traits)}}</span>\n" +
     "\n" +
-    "            <span class=\"raml-console-resource-level-description\" marked=\"resource.description\" opts=\"markedOptions\"></span>\n" +
+    "            <span class=\"raml-console-resource-level-description\" marked=\"resource.description\" opts=\"markedOptions\" ng-class=\"{'resource-collapsed': resourcesCollapsed}\"></span>\n" +
     "\n" +
     "          </div>\n" +
     "          <method-list></method-list>\n" +
